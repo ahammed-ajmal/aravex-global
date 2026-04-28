@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravex Global | Reliable Transport and Contracting Services Across the UAE</title>
+    <meta name="description"
+        content="Aravex Global Contracting and General Transportation LLC SPC provides professional staff transportation, labor transport, and contracting support services based in Abu Dhabi, UAE.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A5F',
+                        accent: '#3A7BD5',
+                        'bg-light': '#F5F9FF',
+                        dark: '#1A1A1A',
+                        gray: {
+                            DEFAULT: '#6B7280',
+                            light: '#E5E7EB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-dark bg-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="logo.png" alt="Aravex Global Logo" class="h-12 w-auto">
+                        <span class="font-bold text-xl tracking-tight text-primary uppercase">Aravex <span
+                                class="text-accent">Global</span></span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-primary font-semibold border-b-2 border-primary">Home</a>
+                    <a href="about.html" class="text-gray hover:text-primary transition-colors">About</a>
+                    <a href="services.html" class="text-gray hover:text-primary transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray hover:text-primary transition-colors">Contact</a>
+                    <a href="tel:+97125171125"
+                        class="bg-primary text-white px-6 py-2.5 rounded-full font-medium hover:bg-accent transition-all shadow-lg flex items-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4"></i> +971 25171125
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-primary hover:text-accent focus:outline-none">
+                        <i data-lucide="menu" class="w-8 h-8"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-50 px-4 py-6 space-y-4 shadow-2xl transition-all duration-300">
+            <div class="flex flex-col space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-primary font-bold bg-bg-light rounded-xl">Home</a>
+                <a href="about.html"
+                    class="block px-4 py-3 text-gray hover:text-primary hover:bg-bg-light rounded-xl transition-all">About
+                    Us</a>
+                <a href="services.html"
+                    class="block px-4 py-3 text-gray hover:text-primary hover:bg-bg-light rounded-xl transition-all">Services</a>
+                <a href="contact.html"
+                    class="block px-4 py-3 text-gray hover:text-primary hover:bg-bg-light rounded-xl transition-all">Contact</a>
+            </div>
+            <div class="pt-4">
+                <a href="tel:+97125171125"
+                    class="w-full bg-primary text-white py-4 rounded-xl font-bold text-center shadow-lg flex items-center justify-center gap-3">
+                    <i data-lucide="phone" class="w-5 h-5"></i> +971 25171125
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:space-x-12">
+                <!-- Text Content -->
+                <div class="lg:w-1/2 mb-12 lg:mb-0 fade-in text-center lg:text-left">
+                    <span
+                        class="inline-block px-4 py-1.5 mb-6 text-xs sm:text-sm font-semibold tracking-wider text-accent uppercase bg-blue-50 rounded-full border border-blue-100">
+                        Established 2026
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-primary leading-tight mb-6">
+                        Reliable Transport and <br class="hidden lg:block"> <span
+                            class="text-accent underline decoration-blue-200 underline-offset-8">Contracting</span>
+                        Services
+                    </h1>
+                    <p class="text-base sm:text-lg text-gray mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Professional staff transportation, logistics, and contracting solutions based in Abu Dhabi.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="contact.html"
+                            class="w-full sm:w-auto flex items-center justify-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-bold shadow-2xl hover:bg-accent transition-all transform hover:-translate-y-1">
+                            Contact Us
+                        </a>
+                        <a href="services.html"
+                            class="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-primary border-2 border-primary px-8 py-4 rounded-xl font-bold hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+                <!-- Image Content -->
+                <div class="lg:w-1/2 relative fade-in">
+                    <div
+                        class="absolute -top-10 -left-10 w-64 h-64 bg-accent/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse">
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse">
+                    </div>
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
+                        <img src="hero_transport.png" alt="Aravex Global Transport Services"
+                            class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Our Core Services</h2>
+                <p class="text-gray max-w-2xl mx-auto">Providing specialized transportation solutions tailored to meet
+                    the dynamic needs of the UAE market.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group fade-in">
+                    <div
+                        class="w-14 h-14 bg-bg-light rounded-xl flex items-center justify-center mb-6 text-accent group-hover:bg-accent group-hover:text-white transition-all">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Staff Transportation</h3>
+                    <p class="text-gray text-sm leading-relaxed">Reliable daily staff transport solutions for companies
+                        across Abu Dhabi and the UAE.</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group fade-in">
+                    <div
+                        class="w-14 h-14 bg-bg-light rounded-xl flex items-center justify-center mb-6 text-accent group-hover:bg-accent group-hover:text-white transition-all">
+                        <i data-lucide="hard-hat" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Labor Transportation</h3>
+                    <p class="text-gray text-sm leading-relaxed">Efficient and safe transportation services for
+                        workforce and labor operations.</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group fade-in">
+                    <div
+                        class="w-14 h-14 bg-bg-light rounded-xl flex items-center justify-center mb-6 text-accent group-hover:bg-accent group-hover:text-white transition-all">
+                        <i data-lucide="truck" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">General Transportation</h3>
+                    <p class="text-gray text-sm leading-relaxed">Flexible transport services tailored for corporate and
+                        individual needs.</p>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group fade-in">
+                    <div
+                        class="w-14 h-14 bg-bg-light rounded-xl flex items-center justify-center mb-6 text-accent group-hover:bg-accent group-hover:text-white transition-all">
+                        <i data-lucide="briefcase" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Contracting Support</h3>
+                    <p class="text-gray text-sm leading-relaxed">Support services for projects requiring transportation
+                        and logistics coordination.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12 fade-in">
+                <p class="text-primary font-medium italic">"We serve corporate, government, and individual clients
+                    across the UAE."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="py-24 bg-bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Our Fleet</h2>
+                <p class="text-gray max-w-2xl mx-auto">We operate a diverse fleet to meet different transportation
+                    needs, from large-scale staff transfers to individual corporate travel.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Fleet 1: Buses -->
+                <div class="overflow-hidden rounded-3xl shadow-xl bg-white group fade-in">
+                    <div class="h-64 overflow-hidden">
+                        <img src="fleet_bus.png" alt="Aravex Global Buses"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-primary mb-4">Buses</h4>
+                        <ul class="space-y-2 text-sm text-gray">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                                33-seater buses</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                                66-seater buses</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fleet 2: Vans & Pickups -->
+                <div class="overflow-hidden rounded-3xl shadow-xl bg-white group fade-in">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800"
+                            alt="Aravex Global Vans"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-primary mb-4">Vans & Pickups</h4>
+                        <ul class="space-y-2 text-sm text-gray">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                                14-seater vans</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                                Double cabin pickups</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fleet 3: Light Vehicles -->
+                <div class="overflow-hidden rounded-3xl shadow-xl bg-white group fade-in">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800"
+                            alt="Aravex Global Cars"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-primary mb-4">Light Vehicles</h4>
+                        <ul class="space-y-2 text-sm text-gray">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                                7-seater vehicles</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                                5-seater vehicles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="max-w-4xl mx-auto p-8 bg-white/50 backdrop-blur-sm rounded-3xl border border-white/50 shadow-sm text-center fade-in">
+                <p class="text-gray-700 leading-relaxed">
+                    All vehicles are well-maintained, air-conditioned, GPS-enabled, and operated by trained drivers to
+                    ensure safety and comfort.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:space-x-20">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 fade-in">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6 text-center lg:text-left">Why Choose
+                        <span class="text-accent">Aravex Global</span>?
+                    </h2>
+                    <p class="text-gray mb-10 text-center lg:text-left">We prioritize your convenience and security
+                        above everything else. Here is why we stand out in the UAE transport sector.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 flex-shrink-0 bg-blue-50 text-accent rounded-lg flex items-center justify-center">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-primary mb-1">Safety First</h5>
+                                <p class="text-sm text-gray">Rigorous vehicle inspections and safety protocols.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 flex-shrink-0 bg-blue-50 text-accent rounded-lg flex items-center justify-center">
+                                <i data-lucide="user-check" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-primary mb-1">Expert Drivers</h5>
+                                <p class="text-sm text-gray">RTA-licensed and professionally trained drivers.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 flex-shrink-0 bg-blue-50 text-accent rounded-lg flex items-center justify-center">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-primary mb-1">On-Time Always</h5>
+                                <p class="text-sm text-gray">We value your time with strict punctuality.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 flex-shrink-0 bg-blue-50 text-accent rounded-lg flex items-center justify-center">
+                                <i data-lucide="settings" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-primary mb-1">Maintained Fleet</h5>
+                                <p class="text-sm text-gray">Modern vehicles in pristine mechanical condition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image/Stat box -->
+                <div class="lg:w-1/2 fade-in mt-12 lg:mt-0">
+                    <div class="bg-primary rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-2xl">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 hidden sm:block">
+                            <i data-lucide="award" class="w-48 h-48"></i>
+                        </div>
+                        <h3 class="text-3xl sm:text-4xl font-bold mb-6">Excellence in Motion</h3>
+                        <p class="text-blue-100 mb-8 leading-relaxed text-sm sm:text-base">
+                            At Aravex Global, our safety standards exceed industry requirements. Every vehicle is
+                            equipped with GPS tracking and our drivers undergo periodic defensive driving training.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div class="p-3 bg-white/10 rounded-xl backdrop-blur-md">
+                                <i data-lucide="shield" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">100% Compliant</p>
+                                <p class="text-blue-200 text-xs uppercase tracking-wider">UAE Transport Regulations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Reliability Section -->
+    <section class="py-24 bg-bg-light border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <div class="inline-flex items-center justify-center p-3 bg-white rounded-full shadow-md text-accent mb-6">
+                <i data-lucide="shield-check" class="w-8 h-8"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-primary mb-8">Safety & Reliability</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
+                    <i data-lucide="check-circle" class="text-green-500 w-6 h-6"></i>
+                    <span class="text-gray-700">Professionally trained and licensed drivers</span>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
+                    <i data-lucide="check-circle" class="text-green-500 w-6 h-6"></i>
+                    <span class="text-gray-700">Regular vehicle maintenance and inspections</span>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
+                    <i data-lucide="check-circle" class="text-green-500 w-6 h-6"></i>
+                    <span class="text-gray-700">GPS tracking for all vehicles</span>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
+                    <i data-lucide="check-circle" class="text-green-500 w-6 h-6"></i>
+                    <span class="text-gray-700">Strict adherence to UAE safety regulations</span>
+                </div>
+            </div>
+            <div class="mt-12 p-6 bg-primary/5 rounded-2xl border border-primary/10">
+                <p class="text-primary font-medium">Based in Abu Dhabi, we provide transportation services across all
+                    major cities in the UAE.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-gradient-to-r from-primary to-accent rounded-[2rem] p-8 sm:p-12 lg:p-20 text-white flex flex-col lg:flex-row items-center justify-between shadow-2xl fade-in gap-10">
+                <div class="text-center lg:text-left">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Start Your Journey Today</h2>
+                    <p class="text-blue-100 text-base sm:text-lg opacity-90">Get a custom quote within 24 hours for your
+                        transport needs.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="contact.html"
+                        class="w-full sm:w-auto bg-white text-primary px-10 py-5 rounded-2xl font-bold text-center hover:bg-blue-50 transition-all shadow-xl">
+                        Contact Us
+                    </a>
+                    <a href="https://wa.me/+97125171125"
+                        class="w-full sm:w-auto bg-[#25D366] text-white px-10 py-5 rounded-2xl font-bold text-center hover:bg-green-600 transition-all shadow-xl flex items-center justify-center gap-3">
+                        <i data-lucide="message-circle"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Branding -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-2">
+                        <img src="logo.png" alt="Aravex Global Logo" class="h-10 w-auto">
+                        <span class="font-bold text-xl tracking-tight uppercase">Aravex <span
+                                class="text-accent">Global</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        "Moving your world, building your future"
+                    </p>
+                    <p class="text-gray-500 text-xs">
+                        Aravex Global Contracting and General Transportation LLC SPC
+                    </p>
+                </div>
+
+                <!-- Fast Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-accent mt-1"></i>
+                            <span>M-26 - Musaffah - Abu Dhabi - United Arab Emirates</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-accent"></i>
+                            <span>+971 25171125</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-accent"></i>
+                            <span>info@aravexglobal.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Map -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Find Us</h4>
+                    <div class="rounded-xl overflow-hidden h-48 border border-gray-800 shadow-inner">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.804144415891!2d54.492589!3d24.316824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e40e0a5c5c5c5%3A0x0!2zMjTCsDE5JzAwLjYiTiA1NMKwMjknMzMuMyJF!5e0!3m2!1sen!2sae!4v1714100000000!5m2!1sen!2sae"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="pt-10 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs gap-4 text-center md:text-left">
+                <p>&copy; 2026 Aravex Global Contracting and General Transportation LLC SPC. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/97125171125" target="_blank"
+        class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.14-1.086c1.17.637 2.483.974 3.827.974h.004c4.367 0 7.926-3.558 7.93-7.926a7.868 7.868 0 0 0-2.33-5.588zM7.994 14.52a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+        <!-- Pulse effect -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-30 animate-ping"></span>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow-md');
+                navbar.classList.remove('py-0');
+            } else {
+                navbar.classList.remove('py-2', 'shadow-md');
+                navbar.classList.add('py-0');
+            }
+        });
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
