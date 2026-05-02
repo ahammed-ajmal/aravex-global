@@ -1,243 +1,283 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Aravex Global Contracting and General Transportation LLC SPC</title>
-    
-    <!-- Fonts -->
+    <meta charset="utf-8">
+    <title>Cental - Car Rent Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1E3A5F',
-                        accent: '#3A7BD5',
-                        'bg-light': '#F5F9FF',
-                        dark: '#1A1A1A',
-                        gray: {
-                            DEFAULT: '#6B7280',
-                            light: '#E5E7EB'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <style>
-        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-        .fade-in.visible { opacity: 1; transform: translateY(0); }
-        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
-    </style>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="font-sans text-dark bg-white overflow-x-hidden">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 glass-nav border-b border-gray-100 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="flex items-center space-x-2">
-                        <img src="logo.png" alt="Aravex Global Logo" class="h-12 w-auto">
-                        <span class="font-bold text-xl tracking-tight text-primary uppercase">Aravex <span class="text-accent">Global</span></span>
-                    </a>
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
+        <div class="container">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find
+                            A Location</a>
+                        <a href="tel: +97125171125" class="text-muted me-4"><i
+                                class="fas fa-phone-alt text-primary me-2"></i> +97125171125</a>
+                        <a href="mailto:info@aravexglobal.com" class="text-muted me-0"><i
+                                class="fas fa-envelope text-primary me-2"></i>info@aravexglobal.com</a>
+                    </div>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray hover:text-primary transition-colors">Home</a>
-                    <a href="about.html" class="text-gray hover:text-primary transition-colors">About</a>
-                    <a href="services.html" class="text-gray hover:text-primary transition-colors">Services</a>
-                    <a href="contact.html" class="text-primary font-semibold border-b-2 border-primary">Contact</a>
-                    <a href="tel:+97125171125" class="bg-primary text-white px-6 py-2.5 rounded-full font-medium hover:bg-accent transition-all shadow-lg flex items-center gap-2">
-                        <i data-lucide="phone" class="w-4 h-4"></i> +971 25171125
-                    </a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-primary focus:outline-none"><i data-lucide="menu" class="w-8 h-8"></i></button>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-50 px-4 py-6 space-y-4 shadow-2xl transition-all duration-300">
-            <div class="flex flex-col space-y-2">
-                <a href="index.html" class="block px-4 py-3 text-gray hover:text-primary hover:bg-bg-light rounded-xl transition-all">Home</a>
-                <a href="about.html" class="block px-4 py-3 text-gray hover:text-primary hover:bg-bg-light rounded-xl transition-all">About Us</a>
-                <a href="services.html" class="block px-4 py-3 text-gray hover:text-primary hover:bg-bg-light rounded-xl transition-all">Services</a>
-                <a href="contact.html" class="block px-4 py-3 text-primary font-bold bg-bg-light rounded-xl">Contact</a>
-            </div>
-            <div class="pt-4">
-                <a href="tel:+97125171125" class="w-full bg-primary text-white py-4 rounded-xl font-bold text-center shadow-lg flex items-center justify-center gap-3">
-                    <i data-lucide="phone" class="w-5 h-5"></i> +971 25171125
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="display-6 text-primary"><img src="img/logo.png" alt="Logo"></i></i>Aravex Global</h1>
+
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a> <a href="index.html#service"
+                            class="nav-item nav-link">Services</a>
+                        <a href="service.html" class="nav-item nav-link">Vehicle</a>
+                        <a href="blog.html" class="nav-item nav-link">Team</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    </div>
+                    <a href="https://htmlcodex.com/downloading/?item=3387"
+                        class="btn btn-primary rounded-pill py-2 px-4">Buy Pro Version</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb mb-5">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">Contact</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid contact py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-5 text-capitalize text-primary mb-3">Contact Us</h1>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet nemo expedita
+                    asperiores commodi accusantium at cum harum, excepturi, quia tempora cupiditate! Adipisci facilis
+                    modi quisquam quia distinctio,</p>
             </div>
-        </div>
-    </nav>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-secondary p-5 rounded">
+                        <h5 class="text-white lh-base mb-4">Receive messages instantly with our PHP and Ajax contact
+                            form - available in the <a href="https://htmlcodex.com/downloading/?item=3387">Pro
+                                Version</a> only.</h5>
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 160px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
 
-    <!-- Header -->
-    <section class="pt-40 pb-20 bg-bg-light">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-6 fade-in">Get In Touch</h1>
-            <p class="text-gray text-lg max-w-3xl mx-auto fade-in">We are here to help you with all your transportation needs. Reach out to us via phone, WhatsApp, or the form below.</p>
-        </div>
-    </section>
-
-    <!-- Contact Details & Form -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- Contact Info -->
-                <div class="fade-in">
-                    <h2 class="text-3xl font-bold text-primary mb-8">Contact Information</h2>
-                    <p class="text-gray mb-10 leading-relaxed">Our team is ready to provide you with a competitive quote and the best service in the UAE. Don't hesitate to reach out for any inquiries.</p>
-                    
-                    <div class="space-y-8">
-                        <div class="flex items-start gap-6">
-                            <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-light w-100 py-3">Send Message</button>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-primary mb-1">Phone</h4>
-                                <a href="tel:+97125171125" class="text-gray hover:text-accent">+971 25171125</a>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6">
-                            <div class="w-12 h-12 bg-green-50 text-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="message-circle" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary mb-1">WhatsApp</h4>
-                                <a href="https://wa.me/97125171125" target="_blank" class="text-gray hover:text-accent">Chat with us on WhatsApp</a>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6">
-                            <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="mail" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary mb-1">Email</h4>
-                                <a href="mailto:info@aravexglobal.com" class="text-gray hover:text-accent">info@aravexglobal.com</a>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6">
-                            <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="map-pin" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary mb-1">Office Location</h4>
-                                <p class="text-gray text-sm sm:text-base">M-26 - Musaffah - Abu Dhabi - United Arab Emirates</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6">
-                            <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="clock" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary mb-1">Working Hours</h4>
-                                <p class="text-gray text-sm">Monday to Friday: 09:00 – 17:00</p>
-                                <p class="text-gray text-sm">Saturday & Sunday: Closed</p>
-                            </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded">
+                        <iframe class="rounded w-100" style="height: 580px;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
-                <!-- Form Placeholder -->
-                <div class="bg-bg-light p-8 lg:p-12 rounded-3xl border border-blue-100 fade-in shadow-xl">
-                    <h3 class="text-2xl font-bold text-primary mb-6">Send us a Message</h3>
-                    <form action="#" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium text-primary mb-2">Name</label>
-                                <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="Enter your name">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-primary mb-2">Phone</label>
-                                <input type="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="Enter your phone number">
-                            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 mt-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">About Us</h4>
+                            <p class="mb-3">Reliable transport and contracting services across the UAE with safe
+                                operations, fleet support, and trusted logistics solutions.</p>
                         </div>
-                        <div>
-                            <label class="block text-sm font-medium text-primary mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="Enter your email">
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Enter your email">
+                            <button type="button"
+                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Subscribe</button>
                         </div>
-                        <div>
-                            <label class="block text-sm font-medium text-primary mb-2">Message</label>
-                            <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> About</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Cars</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Car Types</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Team</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Business Hours</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                            <p class="text-white mb-0">09:00 am to 06:00 pm</p>
                         </div>
-                        <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold shadow-lg hover:bg-accent transition-all transform hover:scale-[1.02]">
-                            Send Message
-                        </button>
-                    </form>
+
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Vacation:</h6>
+                            <p class="text-white mb-0">All Sunday & Saturday is our vacation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> M26, Mussafah, Abu Dhabi</a>
+                        <a href="mailto:info@aravexglobal.com"><i class="fas fa-envelope me-2"></i>
+                            info@aravexglobal.com</a>
+                        <a href="tel: +97125171125"><i class="fas fa-phone me-2"></i> +97125171125</a>
+                        <a href="tel: +97125171125" class="mb-3"><i class="fas fa-print me-2"></i> +97125171125</a>
+                        <div class="d-flex">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Footer End -->
 
-    <!-- Map Section -->
-    <section class="h-[500px] w-full border-t border-gray-100">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.804144415891!2d54.492589!3d24.316824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e40e0a5c5c5c5%3A0x0!2zMjTCsDE5JzAwLjYiTiA1NMKwMjknMzMuMyJF!5e0!3m2!1sen!2sae!4v1714100000000!5m2!1sen!2sae" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </section>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                        reserved.</span>
+                </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="flex items-center justify-center space-x-2 mb-8">
-                <img src="logo.png" alt="Aravex Global Logo" class="h-10 w-auto">
-                <span class="font-bold text-2xl tracking-tight text-white uppercase">Aravex <span class="text-accent">Global</span></span>
-            </div>
-            <p class="text-gray-400 max-w-xl mx-auto mb-4">"Moving your world, building your future"</p>
-            <p class="text-gray-500 text-sm max-w-xl mx-auto mb-10">Aravex Global Contracting and General Transportation LLC SPC</p>
-            <div class="flex justify-center gap-10 text-gray-500 text-sm">
-                <a href="index.html" class="hover:text-accent">Home</a>
-                <a href="about.html" class="hover:text-accent">About</a>
-                <a href="services.html" class="hover:text-accent">Services</a>
-                <a href="contact.html" class="hover:text-accent">Contact</a>
-            </div>
-            <div class="mt-16 pt-8 border-t border-gray-800 text-gray-600 text-xs text-center">
-                &copy; 2026 Aravex Global Contracting and General Transportation LLC SPC. All rights reserved.
             </div>
         </div>
-    </footer>
+    </div>
+    <!-- Copyright End -->
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/97125171125" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.14-1.086c1.17.637 2.483.974 3.827.974h.004c4.367 0 7.926-3.558 7.93-7.926a7.868 7.868 0 0 0-2.33-5.588zM7.994 14.52a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
-        <!-- Pulse effect -->
-        <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-30 animate-ping"></span>
-    </a>
 
-    <!-- Scripts -->
-    <script>
-        lucide.createIcons();
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('shadow-md');
-            else navbar.classList.remove('shadow-md');
-        });
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    </script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
