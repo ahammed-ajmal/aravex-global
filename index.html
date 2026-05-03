@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cental - Car Rent Website Template</title>
+    <title>ARAVEX Global - General Transportation and Contracting</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,6 +29,22 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F2E4E',
+                        accent: '#0066FF',
+                        gray: '#6B7280',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -48,7 +64,7 @@
             <div class="row gx-0 align-items-center" style="height: 45px;">
                 <div class="col-lg-6 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href="#fleet" class="text-muted me-4"><i
+                        <a href="#" class="text-muted me-4"><i
                                 class="fas fa-map-marker-alt text-primary me-2"></i>Mussafah, Abu Dhabi</a>
                         <a href="tel: +97125171125" class="text-muted me-4"><i
                                 class="fas fa-phone-alt text-primary me-2"></i> +97125171125</a>
@@ -58,13 +74,13 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-end">
                     <div class="d-flex align-items-center justify-content-end">
-                        <a href="#fleet" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a href="#fleet" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
                                 class="fab fa-twitter"></i></a>
-                        <a href="#fleet" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="#fleet" class="btn btn-light btn-sm-square rounded-circle me-0"><i
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -77,8 +93,8 @@
     <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="display-6 text-primary"><img src="img/logo.png" alt="Logo"></i></i>Aravex Global</h1>
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="display-6 text-primary"><img src="img/logo.png" alt="Logo">Aravex Global</h1>
 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -94,8 +110,8 @@
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="https://htmlcodex.com/downloading/?item=3387"
-                        class="btn btn-primary rounded-pill py-2 px-4">Buy Pro Version</a>
+                    <a href="https://wa.me/971542033507" target="_blank"
+                        class="btn btn-primary rounded-pill py-2 px-4">Contact us</a>
                 </div>
             </nav>
         </div>
@@ -119,16 +135,19 @@
                                 <div class="col-lg-6 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s"
                                     style="animation-delay: 1s;">
                                     <div class="bg-secondary rounded p-5">
-                                        <h4 class="text-white mb-4">CONTINUE CAR RESERVATION</h4>
+                                        <h4 class="text-white mb-4">BOOK A SERVICE</h4>
                                         <form>
                                             <div class="row g-3">
                                                 <div class="col-12">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Select Your Car type</option>
-                                                        <option value="1">VW Golf VII</option>
-                                                        <option value="2">Audi A1 S-Line</option>
-                                                        <option value="3">Toyota Camry</option>
-                                                        <option value="4">BMW 320 ModernLine</option>
+                                                    <select class="form-select" aria-label="Select Vehicle Type">
+                                                        <option selected>Select Vehicle Type</option>
+                                                        <option value="1">5 Seater</option>
+                                                        <option value="2">7 Seater</option>
+                                                        <option value="3">14 Seater Van</option>
+                                                        <option value="4">33 Seater Bus</option>
+                                                        <option value="5">66 Seater Bus</option>
+                                                        <option value="6">Double Cabin Pickup</option>
+                                                        <option value="7">Not Sure Yet</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-12">
@@ -136,25 +155,25 @@
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
                                                             <span class="fas fa-map-marker-alt"></span> <span
-                                                                class="ms-1">Pick Up</span>
+                                                                class="ms-1">Pick Up Location</span>
                                                         </div>
                                                         <input class="form-control" type="text"
-                                                            placeholder="Enter a City or Airport"
-                                                            aria-label="Enter a City or Airport">
+                                                            placeholder="Enter pickup location or project site"
+                                                            aria-label="Enter pickup location or project site">
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <a href="#fleet" class="text-start text-white d-block mb-2">Need a
-                                                        different drop-off location?</a>
                                                     <div class="input-group">
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
                                                             <span class="fas fa-map-marker-alt"></span><span
-                                                                class="ms-1">Drop off</span>
+                                                                class="ms-1 text-truncate"
+                                                                style="max-width: 150px;">Destination / Site
+                                                                Location</span>
                                                         </div>
                                                         <input class="form-control" type="text"
-                                                            placeholder="Enter a City or Airport"
-                                                            aria-label="Enter a City or Airport">
+                                                            placeholder="Enter destination or work site"
+                                                            aria-label="Enter destination or work site">
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
@@ -162,7 +181,7 @@
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
                                                             <span class="fas fa-calendar-alt"></span><span
-                                                                class="ms-1">Pick Up</span>
+                                                                class="ms-1">Start Date</span>
                                                         </div>
                                                         <input class="form-control" type="date">
                                                         <select class="form-select ms-3"
@@ -183,7 +202,7 @@
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
                                                             <span class="fas fa-calendar-alt"></span><span
-                                                                class="ms-1">Drop off</span>
+                                                                class="ms-1">End Date</span>
                                                         </div>
                                                         <input class="form-control" type="date">
                                                         <select class="form-select ms-3"
@@ -200,7 +219,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <button class="btn btn-light w-100 py-2">Book Now</button>
+                                                    <button class="btn btn-light w-100 py-2">Request Service</button>
+                                                    <p class="text-white text-center mt-2 mb-0"
+                                                        style="font-size: 0.85rem;">Our team will contact you during
+                                                        business hours.</p>
                                                 </div>
                                             </div>
                                         </form>
@@ -209,8 +231,21 @@
                                 <div class="col-lg-6 d-none d-lg-flex fadeInRight animated" data-animation="fadeInRight"
                                     data-delay="1s" style="animation-delay: 1s;">
                                     <div class="text-start">
-                                        <h1 class="display-5 text-white">Get 15% off your rental Plan your trip now</h1>
-                                        <p>Treat yourself in USA</p>
+                                        <span
+                                            class="inline-block px-4 py-1.5 mb-6 text-xs sm:text-sm font-semibold tracking-wider text-accent uppercase bg-blue-50 rounded-full border border-blue-100">
+                                            Established 2026
+                                        </span>
+                                        <h1
+                                            class="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                                            Reliable Transport and <br class="hidden lg:block"> <span
+                                                class="text-accent underline decoration-blue-200 underline-offset-8">Contracting</span>
+                                            Services
+                                        </h1>
+                                        <p
+                                            class="text-base sm:text-lg text-white mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                                            Professional staff transportation, logistics, and contracting solutions
+                                            based in Abu Dhabi.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -225,42 +260,45 @@
                                 <div class="col-lg-6 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s"
                                     style="animation-delay: 1s;">
                                     <div class="bg-secondary rounded p-5">
-                                        <h4 class="text-white mb-4">CONTINUE CAR RESERVATION</h4>
+                                        <h4 class="text-white mb-4">BOOK A SERVICE</h4>
                                         <form>
                                             <div class="row g-3">
                                                 <div class="col-12">
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Select Your Car type</option>
-                                                        <option value="1">VW Golf VII</option>
-                                                        <option value="2">Audi A1 S-Line</option>
-                                                        <option value="3">Toyota Camry</option>
-                                                        <option value="4">BMW 320 ModernLine</option>
+                                                    <select class="form-select" aria-label="Select Vehicle Type">
+                                                        <option selected>Select Vehicle Type</option>
+                                                        <option value="1">5 Seater</option>
+                                                        <option value="2">7 Seater</option>
+                                                        <option value="3">14 Seater Van</option>
+                                                        <option value="4">33 Seater Bus</option>
+                                                        <option value="5">66 Seater Bus</option>
+                                                        <option value="6">Double Cabin Pickup</option>
+                                                        <option value="7">Not Sure Yet</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="input-group">
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                            <span class="fas fa-map-marker-alt"></span><span
-                                                                class="ms-1">Pick Up</span>
+                                                            <span class="fas fa-map-marker-alt"></span> <span
+                                                                class="ms-1">Pick Up Location</span>
                                                         </div>
                                                         <input class="form-control" type="text"
-                                                            placeholder="Enter a City or Airport"
-                                                            aria-label="Enter a City or Airport">
+                                                            placeholder="Enter pickup location or project site"
+                                                            aria-label="Enter pickup location or project site">
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <a href="#fleet" class="text-start text-white d-block mb-2">Need a
-                                                        different drop-off location?</a>
                                                     <div class="input-group">
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
                                                             <span class="fas fa-map-marker-alt"></span><span
-                                                                class="ms-1">Drop off</span>
+                                                                class="ms-1 text-truncate"
+                                                                style="max-width: 150px;">Destination / Site
+                                                                Location</span>
                                                         </div>
                                                         <input class="form-control" type="text"
-                                                            placeholder="Enter a City or Airport"
-                                                            aria-label="Enter a City or Airport">
+                                                            placeholder="Enter destination or work site"
+                                                            aria-label="Enter destination or work site">
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
@@ -268,7 +306,7 @@
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
                                                             <span class="fas fa-calendar-alt"></span><span
-                                                                class="ms-1">Pick Up</span>
+                                                                class="ms-1">Start Date</span>
                                                         </div>
                                                         <input class="form-control" type="date">
                                                         <select class="form-select ms-3"
@@ -289,7 +327,7 @@
                                                         <div
                                                             class="d-flex align-items-center bg-light text-body rounded-start p-2">
                                                             <span class="fas fa-calendar-alt"></span><span
-                                                                class="ms-1">Drop off</span>
+                                                                class="ms-1">End Date</span>
                                                         </div>
                                                         <input class="form-control" type="date">
                                                         <select class="form-select ms-3"
@@ -306,7 +344,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <button class="btn btn-light w-100 py-2">Book Now</button>
+                                                    <button class="btn btn-light w-100 py-2">Request Service</button>
+                                                    <p class="text-white text-center mt-2 mb-0"
+                                                        style="font-size: 0.85rem;">Our team will contact you during
+                                                        business hours.</p>
                                                 </div>
                                             </div>
                                         </form>
@@ -315,9 +356,21 @@
                                 <div class="col-lg-6 d-none d-lg-flex fadeInRight animated" data-animation="fadeInRight"
                                     data-delay="1s" style="animation-delay: 1s;">
                                     <div class="text-start">
-                                        <h1 class="display-5 text-white">Get 15% off your rental! Choose Your Model
+                                        <span
+                                            class="inline-block px-4 py-1.5 mb-6 text-xs sm:text-sm font-semibold tracking-wider text-accent uppercase bg-blue-50 rounded-full border border-blue-100">
+                                            Established 2026
+                                        </span>
+                                        <h1
+                                            class="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                                            Reliable Transport and <br class="hidden lg:block"> <span
+                                                class="text-accent underline decoration-blue-200 underline-offset-8">Contracting</span>
+                                            Services
                                         </h1>
-                                        <p>Treat yourself in USA</p>
+                                        <p
+                                            class="text-base sm:text-lg text-white mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                                            Professional staff transportation, logistics, and contracting solutions
+                                            based in Abu Dhabi.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -336,10 +389,11 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="about-item">
                         <div class="pb-5">
-                            <h1 class="display-5 text-capitalize">Cental <span class="text-primary">About</span></h1>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet nemo
-                                expedita asperiores commodi accusantium at cum harum, excepturi, quia tempora
-                                cupiditate! Adipisci facilis modi quisquam quia distinctio,
+                            <h1 class="display-5 text-capitalize">About <span class="text-primary">Aravex</span></h1>
+                            <p class="mb-0">Aravex Global Contracting and General Transportation LLC SPC delivers
+                                dependable transportation, fleet coordination, logistics support, and contracting
+                                services across the UAE. We focus on safety, punctual operations, and reliable project
+                                support for businesses, workforce mobility, and industrial requirements.
                             </p>
                         </div>
                         <div class="row g-4">
@@ -349,7 +403,9 @@
                                         <img src="img/about-icon-1.png" class="img-fluid w-50 h-50" alt="Icon">
                                     </div>
                                     <h5 class="mb-3">Our Vision</h5>
-                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="mb-0">To become a trusted transportation and contracting partner in the
+                                        UAE through reliable operations, safety-focused services, and long-term client
+                                        relationships.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -358,31 +414,34 @@
                                         <img src="img/about-icon-2.png" class="img-fluid h-50 w-50" alt="Icon">
                                     </div>
                                     <h5 class="mb-3">Our Mision</h5>
-                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="mb-0">To provide efficient transportation, logistics, and operational
+                                        support solutions with professionalism, safety, and consistent service quality.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <p class="text-item my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                            aliquam ipsum. Sed suscipit dolorem libero sequi aut natus debitis reprehenderit facilis
-                            quaerat similique, est at in eum. Quo, obcaecati in!
+                        <p class="text-item my-4">With a commitment to operational excellence, Aravex Global supports
+                            businesses and project teams through organized transportation services, fleet management,
+                            and logistics coordination. Our goal is to deliver practical, dependable, and efficient
+                            solutions tailored to client requirements across the UAE.
                         </p>
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="text-center rounded bg-secondary p-4">
-                                    <h1 class="display-6 text-white">17</h1>
-                                    <h5 class="text-light mb-0">Years Of Experience</h5>
+                                    <h1 class="display-6 text-white">10+</h1>
+                                    <h5 class="text-light mb-0">Years Of Combined Industry Experience</h5>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="rounded">
-                                    <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Morbi tristique
-                                        senectus</p>
-                                    <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> A scelerisque
-                                        purus</p>
-                                    <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Dictumst
-                                        vestibulum</p>
-                                    <p class="mb-0"><i class="fa fa-check-circle text-primary me-1"></i> dio aenean sed
-                                        adipiscing</p>
+                                    <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i>Reliable
+                                        transportation</p>
+                                    <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Safety-focused
+                                        fleet management</p>
+                                    <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Professional
+                                        workforce support</p>
+                                    <p class="mb-0"><i class="fa fa-check-circle text-primary me-1"></i> UAE-wide
+                                        service availability</p>
                                 </div>
                             </div>
                             <div class="col-lg-5 d-flex align-items-center">
@@ -996,7 +1055,8 @@
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-md-0">
                     <span class="text-body"><a href="#fleet" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                                class="fas fa-copyright text-light me-2"></i>2026 Aravex Global Contracting and
+                            General Transportation LLC SPC</a>, All right
                         reserved.</span>
                 </div>
 

@@ -642,4 +642,7 @@
 }
 /*** copyright end ***/
 
-
+/* Fix Tailwind CSS conflict with Bootstrap navbar collapse */
+.collapse.navbar-collapse {
+    visibility: visible !important;
+}
