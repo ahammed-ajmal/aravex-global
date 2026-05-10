@@ -29,6 +29,25 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                container: false,
+            },
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F2E4E',
+                        accent: '#0066FF',
+                        gray: '#6B7280',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -88,9 +107,9 @@
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="index.html#service" class="nav-item nav-link">Services</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="vehicle.html" class="nav-item nav-link active">Fleet</a>
-                        <a href="team.html" class="nav-item nav-link">Team</a>
+                        <!-- <a href="team.html" class="nav-item nav-link">Team</a> -->
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
@@ -321,8 +340,8 @@
                     <div class="footer-item d-flex flex-column">
                         <h4 class="text-white mb-4">Quick Links</h4>
                         <a href="about.html"><i class="fas fa-angle-right me-2"></i> About</a>
-                        <a href="vehicle.html"><i class="fas fa-angle-right me-2"></i> Our Fleet</a>
-                        <a href="vehicle.html"><i class="fas fa-angle-right me-2"></i> Fleet Types</a>
+                        <a href="vehicle.html"><i class="fas fa-angle-right me-2"></i> Fleet</a>
+                        <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
                         <a href="team.html"><i class="fas fa-angle-right me-2"></i> Team</a>
                         <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
                         <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>

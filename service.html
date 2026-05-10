@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ARAVEX Global - Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                container: false,
+            },
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F2E4E',
+                        accent: '#0066FF',
+                        gray: '#6B7280',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
+        <div class="container">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted me-4"><i
+                                class="fas fa-map-marker-alt text-primary me-2"></i>Mussafah, Abu Dhabi</a>
+                        <a href="tel: +97125171125" class="text-muted me-4"><i
+                                class="fas fa-phone-alt text-primary me-2"></i> +97125171125</a>
+                        <a href="mailto:info@aravexglobal.com" class="text-muted me-0"><i
+                                class="fas fa-envelope text-primary me-2"></i>info@aravexglobal.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="display-6 text-primary"><img src="img/logo.png" alt="Logo">Aravex Global</h1>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Services</a>
+                        <a href="vehicle.html" class="nav-item nav-link">Fleet</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="https://wa.me/971542033507" target="_blank"
+                        class="btn btn-primary rounded-pill py-2 px-4">Contact us</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb mb-5">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">Services</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid service py-5" id="service">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-5 text-capitalize mb-3">Professional <span class="text-primary">Solutions</span></h1>
+                <p class="mb-0">Mainly Abu Dhabi, with services available across all UAE.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item p-4">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-building fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">General Contracting</h4>
+                        <p class="mb-4">Professional support for civil, infrastructure, and site-related operational
+                            activities.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fa fa-check text-primary me-2"></i>Site planning support</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Execution coordination</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Workforce and resource management</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Safety and quality support</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Project operational assistance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-bus fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Staff & Labor Transportation</h4>
+                        <p class="mb-4">Reliable workforce transportation solutions for businesses, industrial
+                            operations, and project sites.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fa fa-check text-primary me-2"></i>Staff transportation services</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Labor transportation support</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Shift-based transportation</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Site crew movement</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Fixed and flexible routes</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Corporate transportation support</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Daily pickup and drop-off</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-cogs fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Fleet Management</h4>
+                        <p class="mb-4">Efficient fleet coordination and vehicle management solutions designed to
+                            maintain operational readiness.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fa fa-check text-primary me-2"></i>Vehicle inspection controls</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Maintenance scheduling</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Fleet uptime optimization</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>GPS-enabled tracking</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Operational monitoring support</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>AC-equipped vehicle fleet</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Comfortable passenger solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-shipping-fast fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Logistics Coordination</h4>
+                        <p class="mb-4">Coordinated logistics and transportation support for projects, material
+                            movement, and operational workflows.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fa fa-check text-primary me-2"></i>Delivery schedule support</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>On-site logistics coordination</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Multi-vendor coordination</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Scalable transport planning</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Material movement support</li>
+                            <li><i class="fa fa-check text-primary me-2"></i>Operational delivery assistance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Booking Start -->
+    <div class="container-fluid booking py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h1 class="display-5 text-capitalize mb-4">Book A <span class="text-primary">Service</span></h1>
+                    <p class="mb-4">Need reliable transportation or contracting support? Fill out the form, and our team
+                        will get back to you with a tailored solution for your requirements.</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                        class="fa fa-phone-alt"></i></div>
+                                <div>
+                                    <h6 class="mb-1">Call Us</h6>
+                                    <p class="mb-0">+97125171125</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                        class="fa fa-envelope"></i></div>
+                                <div>
+                                    <h6 class="mb-1">Email Us</h6>
+                                    <p class="mb-0">info@aravexglobal.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="bg-secondary rounded p-5">
+                        <h4 class="text-white mb-4">SERVICE REQUEST FORM</h4>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <select class="form-select" aria-label="Select Vehicle Type">
+                                        <option selected>Select Vehicle Type</option>
+                                        <option value="1">5 Seater</option>
+                                        <option value="2">7 Seater</option>
+                                        <option value="3">14 Seater Van</option>
+                                        <option value="4">33 Seater Bus</option>
+                                        <option value="5">66 Seater Bus</option>
+                                        <option value="6">Double Cabin Pickup</option>
+                                        <option value="7">Not Sure Yet</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                            <span class="fas fa-map-marker-alt"></span> <span class="ms-1">Pick Up
+                                                Location</span>
+                                        </div>
+                                        <input class="form-control" type="text"
+                                            placeholder="Enter pickup location or project site"
+                                            aria-label="Enter pickup location or project site">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                            <span class="fas fa-map-marker-alt"></span><span class="ms-1 text-truncate"
+                                                style="max-width: 150px;">Destination / Site
+                                                Location</span>
+                                        </div>
+                                        <input class="form-control" type="text"
+                                            placeholder="Enter destination or work site"
+                                            aria-label="Enter destination or work site">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                            <span class="fas fa-calendar-alt"></span><span class="ms-1">Start
+                                                Date</span>
+                                        </div>
+                                        <input class="form-control" type="date">
+                                        <select class="form-select ms-3" aria-label="Default select example">
+                                            <option selected>12:00AM</option>
+                                            <option value="1">1:00AM</option>
+                                            <option value="2">2:00AM</option>
+                                            <option value="3">3:00AM</option>
+                                            <option value="4">4:00AM</option>
+                                            <option value="5">5:00AM</option>
+                                            <option value="6">6:00AM</option>
+                                            <option value="7">7:00AM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                            <span class="fas fa-calendar-alt"></span><span class="ms-1">End Date</span>
+                                        </div>
+                                        <input class="form-control" type="date">
+                                        <select class="form-select ms-3" aria-label="Default select example">
+                                            <option selected>12:00AM</option>
+                                            <option value="1">1:00AM</option>
+                                            <option value="2">2:00AM</option>
+                                            <option value="3">3:00AM</option>
+                                            <option value="4">4:00AM</option>
+                                            <option value="5">5:00AM</option>
+                                            <option value="6">6:00AM</option>
+                                            <option value="7">7:00AM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-light w-100 py-2">Request Service</button>
+                                    <p class="text-white text-center mt-2 mb-0" style="font-size: 0.85rem;">Our team will
+                                        contact you during
+                                        business hours.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+    <style>
+        .service .service-item {
+            background: var(--bs-light);
+            border-radius: 10px;
+            transition: 0.5s;
+            height: 100%;
+            text-align: center;
+        }
+
+        .service .service-item:hover {
+            background: var(--bs-secondary);
+        }
+
+        .service .service-item:hover h4,
+        .service .service-item:hover p,
+        .service .service-item:hover li,
+        .service .service-item:hover li i {
+            color: var(--bs-white) !important;
+        }
+
+        .service .service-item .service-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bs-secondary);
+            background: var(--bs-primary);
+            animation: icon-animat 5s infinite alternate;
+            margin: 0 auto;
+        }
+
+        .service .service-item:hover .service-icon {
+            background: var(--bs-white);
+            color: var(--bs-primary);
+        }
+
+        .service .service-item ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        @keyframes icon-animat {
+            0% {
+                border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;
+            }
+
+            25% {
+                border-radius: 69% 31% 19% 81% / 43% 37% 63% 57%;
+            }
+
+            50% {
+                border-radius: 67% 33% 16% 84% / 57% 37% 63% 43%;
+            }
+
+            75% {
+                border-radius: 77% 23% 61% 39% / 36% 61% 39% 64%;
+            }
+
+            100% {
+                border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;
+            }
+        }
+    </style>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 mt-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">About Us</h4>
+                            <p class="mb-3">Reliable transport and contracting services across the UAE with safe
+                                operations, fleet support, and trusted logistics solutions.</p>
+                        </div>
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Enter your email">
+                            <button type="button"
+                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="about.html"><i class="fas fa-angle-right me-2"></i> About</a>
+                        <a href="vehicle.html"><i class="fas fa-angle-right me-2"></i> Cars</a>
+                        <a href="vehicle.html"><i class="fas fa-angle-right me-2"></i> Car Types</a>
+                        <a href="team.html"><i class="fas fa-angle-right me-2"></i> Team</a>
+                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Business Hours</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                            <p class="text-white mb-0">09:00 am to 05:00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Vacation:</h6>
+                            <p class="text-white mb-0">All Sunday & Saturday is our vacation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> M26, Mussafah, Abu Dhabi</a>
+                        <a href="mailto:info@aravexglobal.com"><i class="fas fa-envelope me-2"></i>
+                            info@aravexglobal.com</a>
+                        <a href="tel: +97125171125"><i class="fas fa-phone me-2"></i> +97125171125</a>
+                        <a href="tel: +97125171125" class="mb-3"><i class="fas fa-print me-2"></i> +97125171125</a>
+                        <div class="d-flex">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                        reserved.</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
